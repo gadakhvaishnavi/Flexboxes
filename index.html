@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>flexbox</title>
+</head>
+    <style>
+        .item {
+          height:100px;
+          width: 500px;
+          background-color: #da1811;
+          color: rgb(145, 255, 0);
+          margin: 10px;
+          font-size: 50px;
+          padding: 10px;
+        }
+        .container {
+          height:150px;
+          width: 800px;
+          background-color: #daf447;
+          padding: 5px;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: row;
+        }
+        .item1 {
+        height: 150px;
+        width: 200px;
+        background-color: #d045e2;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(76, 211, 189);
+      }
+      .container1 {
+        height:700px;
+        width:250px;
+        background-color: #ba390e;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item2 {
+        height: 120px;
+        width: 500px;
+        background-color: #57ee78;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(216, 124, 18);
+      }
+
+      .container2 {
+        height:150px;
+        width: 800px;
+        background-color: #101212;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .item3 {
+        height: 200px;
+        width: 200px;
+        background-color: #c04943;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(34, 143, 202);
+      }
+
+      .container3 {
+        height: 700px;
+        width: 240px;
+        background-color: #461236;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item4 {
+        height: 100px;
+        width: 210px;
+        margin: 10px;
+        background-color: #0847f5;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(45, 211, 172);
+      }
+
+      .container4 {
+        height:200px;
+        width: 900px;
+        background-color: #d88333;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item5 {
+        height: 200px;
+        width: 200px;
+        background-color: #5fcd1f;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(217, 41, 114);
+      }
+
+      .container5 {
+        height: 380px;
+        width: 900px;
+        background-color: #35a2aa;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item6 {
+        height: 200px;
+        width: 200px;
+        background-color: #d5a734;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(40, 192, 91);
+      }
+
+      .container6 {
+        height: 380px;
+        width: 900px;
+        background-color: #66288f;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item7 {
+        height: 200px;
+        width: 200px;
+        background-color: tomato;
+        margin: 10px;
+        font-size: 50px;
+        padding: 10px;
+      }
+      .container7 {
+        height:300px;
+        width: 1500px;
+        background-color: rgb(76, 205, 76);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .item8 {
+        height: 200px;
+        width: 200px;
+        background-color: #3921bc;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(150, 136, 155);
+      }
+
+      .container8 {
+        height: 380px;
+        width: 900px;
+        background-color: #84873e;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .item9 {
+        background-color: rgb(149, 44, 175);
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        font-size: 50px;
+        padding: 10px;
+        border: solid 5px  rgb(91, 149, 123);
+      }
+      .container9 {
+        height: 380px;
+        width: 900px;
+        background-color: rgb(181, 146, 132);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .item10 {
+        background-color: #2fdee7;
+        height: 100px;
+        width: 200px;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(236, 9, 134);
+      }
+
+      .container10 {
+        height: 380px;
+        width: 800px;
+        background-color: #3e2bec;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+      }
+      .text{
+            font-family: cursive;
+            font-size:30px;
+            color: darkmagenta;
+        }
+
+            .text1{
+            font-family: inherit;
+            font-size:30px;
+            color: darkmagenta;
+        }
+        
+        .text2{
+            font-family: cursive;
+            font-size:30px;
+            color: darkmagenta;
+        }
+        
+        .text3{
+            font-family: initial;
+            font-size:30px;
+            color: darkmagenta;
+        }
+        
+        .text4{
+            font-family: monospace;
+            font-size:30px;
+            color: darkmagenta;
+        }
+        
+        .text5{
+           font-family: monospace;
+            font-size:30px;
+            color: darkmagenta;
+        }
+        
+        .text6{
+            font-family: inherit;
+            font-size:30px;
+            color: darkmagenta;
+        }
+
+        .text7{
+            font-family: cursive;
+            font-size:30px;
+            color: darkmagenta;
+        }
+
+        .text8{
+           font-family: monospace;
+            font-size:30px;
+            color: darkmagenta;
+        }
+
+        .text9{
+            font-family: serif;
+            font-size:30px;
+            color: darkmagenta;
+        }
+
+        .text10{
+            font-family: cursive;
+            font-size:30px;
+            color: darkmagenta;
+        }
+      </style>
+<body>
+    <h1  class="text">Flex Direction:Row</h1><br>
+<div class="container">
+    <div class="item">One</div>
+    <div class="item">Two</div>
+    <div class="item">Three</div>
+  </div><br><hr/><hr/>
+  <h1 div class="text1">Flex Direction:Column</h1><br>
+  <div class="container1">
+    <div class="item1">Mango</div>
+    <div class="item1">Kiwi</div>
+    <div class="item1">Pineapple</div>
+  </div>
+  <br><hr/><hr/>
+  <h1 div class="text2">Flex Direction:Row Reverse</h1><br>
+  <div class="container2">
+    <div class="item2">Green</div>
+    <div class="item2">Orange</div>
+    <div class="item2">Black</div>
+  </div>
+  <br></b><hr/><hr/>
+  <h1  class="text3">Flex Direction:Row</h1><br>
+  <div class="container3">
+      <div class="item3">Banana</div>
+      <div class="item3">Papaya</div>
+      <div class="item3">Orange</div>
+    </div><br><hr/><hr/>
+    <h1  class="text4">Justify-Content:Start</h1><br>
+  <div class="container4">
+      <div class="item4">Mango</div>
+      <div class="item4">Apple</div>
+      <div class="item4">Grapes</div>
+    </div><br><hr/><hr/>
+    <h1  class="text5">Justify-Content:End</h1><br>
+    <div class="container5">
+        <div class="item5">Apple</div>
+        <div class="item5">Mango</div>
+        <div class="item5">Kiwi</div>
+      </div><br><hr/><hr/>
+      <h1  class="text6">Justify-Content:Center</h1><br>
+      <div class="container6">
+          <div class="item6">Vaishnavi</div>
+          <div class="item6">Shreya</div>
+          <div class="item6">Prajakta</div>
+        </div><br><hr/><hr/>
+        <h1  class="text7">Justify-Content:Space Between</h1><br>
+        <div class="container7">
+            <div class="item7">XYZ</div>
+            <div class="item7">ABC</div>
+            <div class="item7">PQRS</div>
+          </div><br><hr/><hr/>
+          <h1  class="text8">Justify-Content:Space Evenly</h1><br>
+        <div class="container8">
+            <div class="item8">Apple</div>
+            <div class="item8">Mango</div>
+            <div class="item8">Grapes</div>
+          </div><br><hr/><hr/>
+          <h1  class="text9">Justify-Content:Space Around</h1><br>
+             <div class="container9">
+               <div class="item9">Red</div>
+               <div class="item9">Blue</div>
+               <div class="item9">Yellow</div>
+            </div><br><hr/><hr/>   
+            <h1  class="text10">Align-Item: End;</h1><br>
+            <div class="container10">
+                <div class="item10">Apple</div>
+                <div class="item10">Mango</div>
+                <div class="item10">Grapes</div>
+            </div><br><hr/><hr/>
+</body>
+</html>
